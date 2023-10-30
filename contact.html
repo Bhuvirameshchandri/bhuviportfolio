@@ -5,6 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photographic Studio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+                
+                padding: 0;
+                
+                
+                
+                height: 100vh;
+            }
+        
+    .card {
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    h2 {
+        text-align: center;
+    }
+    
+    
+    label {
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="date"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    
+    input[type="radio"] {
+        margin-left: 5px;
+    }
+    #display-image {
+        width: 600px;
+        height: 300px;
+        background-size: cover;
+        background-position:center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .left-column {
+        max-width: 600px;
+        padding: 90px;
+        margin: 0%;
+                
+            }
+    .col-sm-6 {
+        width: 50%;
+        float: left ;
+    }
+    .col-sm-12 {
+        clear: both;
+        width: 20%;
+        
+    }
+    
+    ●	
+    .form {
+        
+        margin-right: 100%;
+        max-width: 200%;
+        padding: 500px;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(136, 13, 13, 0.2);
+    }
+    
+       
+    </style>
+    
 </head>
 <body>
     
@@ -19,151 +104,79 @@
             </div>
         </nav>
     </header>
-<style>
-    body {
-            
-            padding: 0;
-            
-            
-            
-            height: 100vh;
-        }
-    
-.card {
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
-
-h2 {
-    text-align: center;
-}
-
-
-label {
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="date"],
-textarea,
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-
-input[type="radio"] {
-    margin-left: 5px;
-}
-#display-image {
-    width: 600px;
-    height: 300px;
-    background-size: cover;
-    background-position:center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-.left-column {
-    max-width: 600px;
-    padding: 90px;
-    margin: 0%;
-            
-        }
-.col-sm-6 {
-    width: 50%;
-    float: left ;
-}
-.col-sm-12 {
-    clear: both;
-    width: 20%;
-    
-}
-
-●	
-.form {
-    
-    margin-right: 100%;
-    max-width: 200%;
-    padding: 500px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(136, 13, 13, 0.2);
-}
-
-   
-</style>
-</head>
 <body>
     <h2>Contact us</h2><br><br><br>
-    <div class="left-column">
-        <form onsubmit="alertmsg()">
-            <div class="card bg-dark text-white">
-                <div class="col-sm-6">
-                    <label class="label">Image</label><br>
-                    <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
-                    <div id="display-image"></div>
-                    <script type="text/javascript">
-                        const image_input = document.querySelector("#image-input");
-                        
-                        image_input.addEventListener("change", function() {
-                        const reader = new FileReader();
-                        reader.addEventListener("load", () => {
-                            const uploaded_image = reader.result;
-                            document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
-                        });
-                        reader.readAsDataURL(this.files[0]);
+    <form onsubmit="alertmsg()">
+        <div class="card bg-dark text-white">
+            <h2 align="center">Biodata Form</h2><br></div><br><br>
+        <div class="col-sm-6">
+            <label class="label">Image</label><br>
+            <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+            <div id="display-image"></div>
+            <script type="text/javascript">
+                const image_input = document.querySelector("#image-input");
+
+                image_input.addEventListener("change", function() {
+                    const reader = new FileReader();
+                    reader.addEventListener("load", () => {
+                        const uploaded_image = reader.result;
+                        document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
                     });
-    
-                    function alertmsg() {
-                        alert("Biodata Submitted Successfully")
-                    }
-                    </script>
-                </div>
-            </div>
-            <br>
-        
-            <div class="col-sm-12">
-                <label>Name</label>
-                <input type="text" placeholder="Enter Name" class="form-control" />
-            </div>
-            <br>
-            <div class="col-sm-12">
+                    reader.readAsDataURL(this.files[0]);
+                });
+
+                function alertmsg() {
+                    alert("Biodata Submitted Successfully")
+                }
+            </script>
+        </div>
+        <br>
+        <div class="col-sm-6">
+            <label>Name</label>
+            <input type="text" placeholder="Enter Name" class="form-control" />
+        </div>
+        </div><br>
+        <div class="col-sm-6">
             <label>Gender:</label>
             <input type="radio" value="Male" name="gender">Male</input>
             <input type="radio" value="Female" name="gender">Female</input>
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-6">
             <label>Age</label>
             <input type="text" placeholder="Enter Age" class="form-control" />
         </div>
         <br>
-        <div class="col-sm-12">
+        <div class="col-sm-6">
             <label>DOB</label>
             <input type="date" placeholder="Enter DOB" class="form-control" />
         </div>
         <br>
-        <div class="col-sm-12">
+        <div class="col-sm-6">
             <label>Father Name</label>
             <input type="text" placeholder="Enter Father Name" class="form-control" />
         </div>
         <br>
-        <div class="col-sm-12">
+        <div class="col-sm-6">
             <label>Nationality</label>
             <input type="text" placeholder="Enter Nationality" class="form-control" />
         </div>
         <br>
-        <div class="col-sm-12">
+        <div class="col-sm-6">
+            <label>Religion</label>
+            <input type="text" placeholder="Enter Religion" class="form-control " />
+        </div>
+        <br>
+        <div class="col-sm-6">
+            <label>Marital Status</label>
+            <select class="form-control">
+			<option selected>Select</option>
+			<option>Single</option>
+			<option>Married</option>
+		</select>
+        </div>
+        <br>
+        <div class="col-sm-6">
             <label>Phone</label>
             <input type="text" placeholder="Phone" class="form-control" />
         </div>
@@ -173,13 +186,7 @@ input[type="radio"] {
             <label>Address</label>
             <textarea placeholder="Address" class="form-control"></textarea>
         </div>
-            <div class="form-group text-center">
-                <input type="submit" value="Submit" class="btn btn-primary" />
-                <input type="reset" class="btn btn-primary">
-            </div>
-        </form>
-    </div>
-
+    
     </body>
 </html>
 
