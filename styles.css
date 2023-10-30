@@ -1,0 +1,252 @@
+body {
+    background-image: url('images/Background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+h1{
+    background-color: aqua;
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+header h1 {
+    margin: auto;
+}
+#nav{
+    width: 750px;
+    margin: 0 auto;
+    list-style: none;
+}
+#nav li{
+    float: left;
+}
+#nav a{
+    display: block;
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    color: #c91919;
+      
+}
+#nav a:hover{
+    background-color: #333;
+    color: #fff;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h2{
+    text-align: center;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.portfolio {
+
+    .sidenav {
+        height: 20%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 90;
+        bottom: 20;
+        left: 0;
+        background-color: #333;
+        padding-top: 25px;
+        color: #fff;
+    }
+    /* Style for the menu items */
+    .sidenav a {
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        display: block;
+    }
+    /* Change the background color of the menu item on hover */
+    .sidenav a:hover {
+        background-color: #555;
+    }
+    .main-content {
+        margin-left: 260px; /* Adjust the margin to create space next to the sidebar */
+        padding: 20px; /* Add some padding for spacing */
+    }
+    
+    /* Style for the image in the main content */
+    .main-content img {
+        max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    }
+    .image {
+        float: left; /* Float the image to the left */
+        margin: left 10px;
+        margin-right: 10px; /* Add some margin to separate the image from text */
+    }
+    .portfolio {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 300px;
+        margin-left: 19%;
+    }
+    .portfolio img {
+        max-width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+    .image_a {
+        float: right;
+        margin-left: 10px;
+    }
+    .text {
+        /* Add any desired styles for the text */
+        display: flex; 
+       vertical-align: left; 
+       justify-content: center;
+    } 
+    .text-a {
+        flex: 1; /* Allow content to take up remaining space */
+        padding: 20px;
+    }  
+    .image_w {
+        float: left; /* Float the image to the left */
+        margin: left 5px;
+        margin-right: 100px;
+    }
+    .image_container {
+        .image_p {
+            display: flex;
+            justify-content: space-between; /* Distribute space evenly between images */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .text_p {
+            margin-right: 10px; 
+            margin-left: 10px;
+        }
+    }
+    .video-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 250px;
+    }
+    .video-list li {
+        margin: 10px; /* Add space between videos */
+    }
+    .content {
+        flex: 20; /* Allow the content to expand and fill available space */
+        padding: 50px; /* Add padding to the content area */
+        margin-left: 250px;
+    }
+}
+.contact {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+    }
+
+    .left-column {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .right-column {
+        
+        flex: 1;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    label, input, textarea {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        background: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #0056b3;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+    

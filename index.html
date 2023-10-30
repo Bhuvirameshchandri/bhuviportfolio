@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographic Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    img {
+    float: left;
+    margin: 15px 20px 5px 5px;
+}
+</style>
+<body>
+        <script>
+        // JavaScript to show the popup on page load
+        window.onload = function () {
+            document.getElementById('welcomePopup').style.display = 'block';
+        };
+
+        function closePopup() {
+            document.getElementById('welcomePopup').style.display = 'none';
+        }
+    </script>
+    <div class="popup" id="welcomePopup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Welcome to Our Website</h2>
+            <p>Thank you for visiting our website. We're excited to have you here!</p>
+        </div>
+    </div>
+    <h1>Photographic Studio</h1>
+    <header>
+        <nav>
+            <div id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+        </nav>
+    </header>
+    <h2>Welcome to Photographic studio</h2>
+    <p><img src="images/studio.jpg" alt="studio_pic" width="700" height="400">
+        <p><b> Moments That Last a Lifetime</b></p>
+    <p style="justify-content: center;">A photographic studio is often a business owned and represented by one or more photographers, possibly accompanied by assistants and pupils, who create and sell their own and sometimes others’ photographs.
+        <br><br>
+        Since the early years of the 20th century the business functions of a photographic studio have increasingly been called a photographic agency leaving the term "photographic studio" to refer almost exclusively to the workspace.<br>
+        The first commercial use of photography was in the production of portraits.<br> <br>Photography replaced painting almost completely from the 1840s, with fully equipped studios in existence.
+    </p></p>
+    <div class="footer">
+        <footer>
+            <p>&copy; 2023 Your Photographic Studio</p>
+        </footer>
+    </div>
+    </body>
+</html>
